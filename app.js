@@ -14,6 +14,6 @@ function Login()
 {
   var xmlhttp;
   xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", "insert.php?user= "+ document.getElementById("user").value + "pass= "+ document.getElementById("pass").value,false);
+  xmlhttp.open("GET", "insert.php?user= "+ document.getElementById("user").value + "&pass= "+ document.getElementById("pass").value,true);
   xmlhttp.send(null);
 }
